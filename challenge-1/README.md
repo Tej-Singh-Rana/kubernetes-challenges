@@ -93,7 +93,7 @@ Paste this entire script to the lab terminal, sit back and enjoy!
 ```bash
 {
     # Clone this repo to get the manifests
-    git clone --depth 1 https://github.com/kodekloudhub/kubernetes-challenges.git
+    git clone -b patch-v1 --depth 1 https://github.com/tej-singh-rana/kubernetes-challenges.git
 
     ### PVC
     kubectl apply -f kubernetes-challenges/challenge-1/jekyll-pvc.yaml
@@ -108,8 +108,6 @@ Paste this entire script to the lab terminal, sit back and enjoy!
     if [ $? -ne 0 ]
     then
         echo "The pod did not start correctly. Please reload the lab and try again."
-        echo "If the issue persists, please report it in Slack in kubernetes-challenges channel"
-        echo "https://kodekloud.slack.com/archives/C02LS58EGQ4"
         cd ~
         echo "Press CTRL-C to exit"
         read x
