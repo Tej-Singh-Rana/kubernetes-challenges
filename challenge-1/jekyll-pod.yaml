@@ -9,7 +9,7 @@ metadata:
 spec: 
   containers:
   - name: jekyll
-    image: kodekloud/jekyll-serve
+    image: arch1250/jekyll-serve:v1
     volumeMounts:
     - mountPath: /site
       name: site  
