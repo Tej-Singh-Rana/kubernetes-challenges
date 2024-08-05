@@ -15,7 +15,7 @@ spec:
       name: site  
   initContainers:
   - name: copy-jekyll-site
-    image: kodekloud/jekyll
+    image: arch1250/jekyll:v1
     command: [ "jekyll", "new", "/site" ]
     volumeMounts:
     - mountPath: /site
