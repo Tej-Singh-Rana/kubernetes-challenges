@@ -9,13 +9,13 @@ metadata:
 spec: 
   containers:
   - name: jekyll
-    image: arch1250/jekyll-serve:v1
+    image: arch1250/jekyll-serve:v2
     volumeMounts:
     - mountPath: /site
       name: site  
   initContainers:
   - name: copy-jekyll-site
-    image: arch1250/jekyll:v1
+    image: arch1250/jekyll:v2
     command: [ "jekyll", "new", "/site" ]
     volumeMounts:
     - mountPath: /site
